@@ -90,11 +90,54 @@ header{
             padding-right: 20px;
             padding-left: 30px;
         }
+        &--active{
+            &:hover{
+                background:#f5edff;
+                .fa-store{
+                    color: $color-primary;
+                }
+            }
+        }
+    }
+}
+
+.restaurants{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f6f6f6;
+    height: auto;
+    width: 100%;
+    &-card{
+        background: white;
+        border-radius: 30px;
+        width: 90%;
+        margin-bottom: 20px;
+        &__img{
+            border-radius: 20px 20px 0px 0px;
+            width: 100%;
+            max-height: 213px;
+            object-fit: cover;
+        }
+        &__body{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+        }
     }
 }
 
 footer{
     background-color: #353535;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    &>ul{
+        list-style: none;
+        padding: 0;
+    }
 }
 
 .footer__logo{

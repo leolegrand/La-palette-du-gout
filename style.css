@@ -94,8 +94,55 @@ header {
   padding-left: 30px;
 }
 
+.fonctionnement__button--active:hover {
+  background: #f5edff;
+}
+
+.fonctionnement__button--active:hover .fa-store {
+  color: #9356DC;
+}
+
+.restaurants {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f6f6f6;
+  height: auto;
+  width: 100%;
+}
+
+.restaurants-card {
+  background: white;
+  border-radius: 30px;
+  width: 90%;
+  margin-bottom: 20px;
+}
+
+.restaurants-card__img {
+  border-radius: 20px 20px 0px 0px;
+  width: 100%;
+  max-height: 213px;
+  object-fit: cover;
+}
+
+.restaurants-card__body {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
 footer {
   background-color: #353535;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+}
+
+footer > ul {
+  list-style: none;
+  padding: 0;
 }
 
 .footer__logo path {
