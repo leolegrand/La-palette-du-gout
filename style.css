@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.restaurant-name-title {
+  font-family: 'Shrikhand', cursive;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  text-align: center;
+  padding: 1rem;
+}
+
+.explore {
+  background: #f6f6f6;
+  text-align: center;
+}
+
+.explore__localisation {
+  background: linear-gradient(180deg, rgba(45, 45, 45, 0.35232) 0%, #eaeaea 8%);
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.explore__localisation > p {
+  font-weight: 600;
+  padding-left: 1rem;
+}
+
+.explore__body {
+  padding-right: 2em;
+  padding-left: 2em;
+}
+
+.explore__body > h2 {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.explore__body > p {
+  margin-bottom: 2rem;
+  font-weight: 300;
+}
+
+.explore__button {
+  background: linear-gradient(180deg, rgba(255, 121, 218, 0.738471) 0%, #9356dc 91%);
+  border-radius: 50px;
+  border: 0;
+  padding: 1em;
+  color: white;
+  margin-bottom: 50px;
+  font-family: inherit;
+}
+
+.fonctionnement__button__layout {
+  display: flex;
+  flex-direction: column;
+}
+
+.fonctionnement__button {
+  position: relative;
+  background: #eaeaea;
+  border-radius: 50px;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.fonctionnement__button::before {
+  content: "1";
+  position: absolute;
+  left: -5px;
+  background: #9356DC;
+  height: 18px;
+  width: 18px;
+  border-radius: 20px;
+  text-align: center;
+  color: white;
+  font-size: 0.9rem;
+}
+
+.fonctionnement__button > i {
+  padding-right: 20px;
+  padding-left: 30px;
+}
+
+footer {
+  background-color: #353535;
+}
+
+.footer__logo path {
+  fill: #fff;
+}
+/*# sourceMappingURL=style.css.map */

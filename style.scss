@@ -1,0 +1,104 @@
+// utils //
+
+$color-primary: #9356DC;
+$color-secondary: #FF79DA;
+$color-3rd: #99E2D0;
+
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.restaurant-name-title{
+    font-family: 'Shrikhand', cursive;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    text-align: center;
+    padding: 1rem;
+}
+
+.explore{
+    background: #f6f6f6;
+    text-align: center;
+    &__localisation{
+        background: linear-gradient(180deg, rgba(45,45,45,0.352319610252809) 0%, rgba(234,234,234,1) 8%);
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        >p{
+            font-weight: 600;
+            padding-left: 1rem;
+        }
+    }
+    &__body{
+        padding-right: 2em;
+        padding-left: 2em;
+        &>h2{
+            font-weight: 600;
+            font-size: 1.5rem;
+        }
+        &>p{
+            margin-bottom: 2rem;
+            font-weight: 300;
+        }
+    }
+    &__button{
+        background: linear-gradient(180deg, rgba(255,121,218,0.7384713847985429) 0%, rgba(147,86,220,1) 91%);
+        border-radius: 50px;
+        border: 0;
+        padding: 1em;
+        color: white;
+        margin-bottom: 50px;
+        font-family: inherit;
+    }
+}
+
+.fonctionnement{
+    &__button__layout{
+        display: flex;
+        flex-direction: column;
+    }
+    &__button{
+        position: relative;
+        background: #eaeaea;
+        border-radius: 50px;
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 2rem;
+        &::before{
+            content: "1";
+            position: absolute;
+            left: -5px;
+            background: $color-primary;
+            height: 18px;
+            width: 18px;
+            border-radius: 20px;
+            text-align: center;
+            color: white;
+            font-size: 0.9rem;
+        }
+        &>i{
+            padding-right: 20px;
+            padding-left: 30px;
+        }
+    }
+}
+
+footer{
+    background-color: #353535;
+}
+
+.footer__logo{
+    & path{
+        fill: #fff;
+    }
+}
