@@ -1,0 +1,62 @@
+.restaurant-menu__item{
+    position: relative;
+    font-size: 0.7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 10px;
+    width: 90%;
+    background: white;
+    box-shadow: 0px 3px 10px 2px rgba(0,0,0,0.1);
+    margin-bottom: 10px;
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
+    animation: menu-items-delay linear 500ms;
+    @for $i from 1 to 4 {
+        &:nth-of-type(#{$i}){
+            animation-delay: $i *40ms;
+        }
+    }
+    & p{
+        text-overflow: ellipsis;
+       font-size: 0.9rem;
+       font-weight: 300;
+    }
+    .item-price{
+        transition: all linear 400ms;
+        margin-right: 1em;
+        font-weight: 600;
+    }
+    &__slider{
+        transition: all 400ms linear;
+        transform: translate(70px);
+        background: $color-3rd;
+        height: 100%;
+        width: 15%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        @include flex-center;
+        &>i{
+            transform: rotate(360deg);
+            transition: 400ms linear;
+            color: white;
+            font-size: 1.2rem;
+            }
+        }
+}
+
+.restaurant-menu__item:hover{
+    .item-price{
+        transform: translate(-3em, 0%);
+        text-overflow: ellipsis;
+    }
+    .restaurant-menu__item__slider{
+        transform: translate(0%, 0%);
+        &>i{
+            transform: rotate(0deg);
+        }
+     }
+
+}

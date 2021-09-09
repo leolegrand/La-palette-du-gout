@@ -1,0 +1,38 @@
+.fonctionnement__button{
+    position: relative;
+    background: $background-color;
+    border-radius: 20px;
+    box-shadow: 0px 3px 10px 2px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 1.5em auto;
+    padding: 1em;
+    font-weight: 600;
+        @for $i from 1 through 3 {
+            &:nth-of-type(#{$i})::before{
+            content: "#{$i}";
+            position: absolute;
+            left: -10px;
+            background: $color-primary;
+            height: 20px;
+            width: 20px;
+            border-radius: 20px;
+            @include flex-center;
+            color: white;
+            font-size: 10px;
+            }
+        }
+
+    &>.fas{
+        color: #7e7e7e;
+    }
+    &:hover{
+        background:#f5edff;
+        cursor: pointer;
+        
+        .fas{
+            color: $color-primary;
+        }
+    }
+}

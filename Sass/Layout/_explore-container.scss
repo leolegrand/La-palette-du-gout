@@ -1,0 +1,28 @@
+.explore{
+    background: $background-color;
+    text-align: center;
+    &__localisation{
+        background: darken($background-color, 5%);
+        box-shadow: inset 0px 28px 15px -30px rgba(0,0,0,0.4);
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        color: #353535;
+        >p{
+            font-weight: 600;
+            padding: 1rem;
+        }
+    }
+    &__body{
+        padding: 2em;
+        &>h2{
+            font-weight: 800;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+        &>p{
+            margin-bottom: 2rem;
+            font-weight: 300;
+        }
+    }
+}

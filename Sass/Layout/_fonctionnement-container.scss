@@ -1,0 +1,11 @@
+.fonctionnement{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 2.5em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    &__button__layout{
+        width: 90%;
+    }
+}
