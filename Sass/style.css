@@ -13,19 +13,6 @@
   }
 }
 
-.fa-heart {
-  font-weight: 100;
-  transition: all 800ms ease;
-}
-
-.fa-heart:hover {
-  font-weight: 600;
-  background-clip: 100%;
-  background: linear-gradient(to top, #ff79da, #e86edb, #cf64dc, #b35cdc, #9356dc);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 body {
   margin: 0;
 }
@@ -243,8 +230,12 @@ footer > ul li {
   animation-delay: 120ms;
 }
 
+.restaurant-menu__item__layout {
+  width: 72%;
+  white-space: nowrap;
+}
+
 .restaurant-menu__item p {
-  text-overflow: ellipsis;
   font-size: 0.9rem;
   font-weight: 300;
 }
@@ -278,7 +269,6 @@ footer > ul li {
 
 .restaurant-menu__item:hover .item-price {
   transform: translate(-3em, 0%);
-  text-overflow: ellipsis;
 }
 
 .restaurant-menu__item:hover .restaurant-menu__item__slider {
@@ -287,6 +277,12 @@ footer > ul li {
 
 .restaurant-menu__item:hover .restaurant-menu__item__slider > i {
   transform: rotate(0deg);
+}
+
+.restaurant-menu__item:hover .item-info {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .fonctionnement__button {
@@ -413,4 +409,64 @@ footer > ul li {
   padding: 5px 10px;
   font-size: 13px;
   font-weight: 600;
+}
+
+.restaurant-menu__header .fa-heart {
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+}
+
+.restaurant-menu__header .fa-heart__menu--contour {
+  font-size: 23px;
+  font-weight: 100px;
+  color: black;
+}
+
+.restaurant-menu__header .fa-heart__menu--gradiant {
+  opacity: 0;
+  transition: opacity 1s ease;
+  font-size: 23px;
+  font-weight: 800;
+  background-clip: content-box;
+  background: #ff79da;
+  background: linear-gradient(173deg, #ff79da 6%, rgba(147, 86, 220, 0.738471) 56%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.restaurant-menu__header:hover .fa-heart__menu--gradiant {
+  opacity: 1;
+}
+
+.restaurants-card__body {
+  position: relative;
+}
+
+.restaurants-card__body .fa-heart {
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+}
+
+.restaurants-card__body .fa-heart__card--contour {
+  font-size: 23px;
+  font-weight: 100px;
+  color: black;
+}
+
+.restaurants-card__body .fa-heart__card--gradiant {
+  opacity: 0;
+  transition: opacity 1s ease;
+  font-size: 23px;
+  font-weight: 800;
+  background-clip: content-box;
+  background: #ff79da;
+  background: linear-gradient(173deg, #ff79da 6%, rgba(147, 86, 220, 0.738471) 56%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.restaurants-card__body:hover .fa-heart__card--gradiant {
+  opacity: 1;
 }

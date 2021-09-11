@@ -18,8 +18,11 @@
             animation-delay: $i *40ms;
         }
     }
+    &__layout{
+        width: 72%;
+        white-space: nowrap;
+    }
     & p{
-        text-overflow: ellipsis;
        font-size: 0.9rem;
        font-weight: 300;
     }
@@ -50,7 +53,6 @@
 .restaurant-menu__item:hover{
     .item-price{
         transform: translate(-3em, 0%);
-        text-overflow: ellipsis;
     }
     .restaurant-menu__item__slider{
         transform: translate(0%, 0%);
@@ -58,5 +60,11 @@
             transform: rotate(0deg);
         }
      }
+
+    .item-info{
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
 
 }
