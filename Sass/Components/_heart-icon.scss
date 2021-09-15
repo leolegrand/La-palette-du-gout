@@ -1,58 +1,36 @@
-.restaurant-menu__header{
-    .fa-heart{
-        cursor: pointer;
-        position: absolute;
-        right: 0;
+.fa-heart{
+    position: absolute;
+    &--empty{
+        opacity: 1;
+        font-size: 25px;
     }
-    .fa-heart__menu--contour{
-        font-size: 23px;
-        font-weight: 100px;
-        color: black;
-    }
-    .fa-heart__menu--gradiant{
+    &--gradiant{
+        font-size: 25px;
         opacity: 0;
-        transition: opacity 1s ease;
-        font-size: 23px;
-        font-weight: 800;
+        font-weight: 800 !important;
         background-clip: content-box;
         background: rgb(255,121,218);
         background: linear-gradient(173deg, rgba(255,121,218,1) 6%, rgba(147,86,220,0.7384713847985429) 56%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent; 
     }
-    &:hover{
-        .fa-heart__menu--gradiant{
-            opacity: 1;
-        }
-    }
-}
+ }
 
-.restaurants-card__body{    
+ .heart-container{
     position: relative;
-    .fa-heart{
-        cursor: pointer;
-        position: absolute;
-        right: 10px;
-    }
-    .fa-heart__card--contour{
-        font-size: 23px;
-        font-weight: 100px;
-        color: black;
-    }
-    .fa-heart__card--gradiant{
-        opacity: 0;
-        transition: opacity 1s ease;
-        font-size: 23px;
-        font-weight: 800;
-        background-clip: content-box;
-        background: rgb(255,121,218);
-        background: linear-gradient(173deg, rgba(255,121,218,1) 6%, rgba(147,86,220,0.7384713847985429) 56%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent; 
-    }
-    &:hover{
-        .fa-heart__card--gradiant{
-            opacity: 1;
-        }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    &:hover {         
+       .fa-heart--gradiant{
+           animation: gradiant-heart-fading 600ms ease-in-out;
+           opacity: 1;
+       }
+       .fa-heart--empty{
+           animation: empty-heart-fading 600ms ease-in-out;
+           opacity: 0;
+       }
     }
 }

@@ -1,5 +1,26 @@
 @keyframes menu-items-delay {
-    from {bottom: 15px; opacity: 0%;}
-    50% {bottom: 7.5px; opacity: 20%;}
-    to {bottom: 0px; opacity: 100%;}
+    from {bottom: 20px; opacity: 0%;}
+    20% {bottom: 16px; opacity: 20%;}
+    40% {bottom: 12px; opacity: 40%;}
+    60% {bottom: 8px; opacity: 60%;}
+    80% {bottom: 4px; opacity: 80%;}
+    to  {bottom: 0px; opacity: 100%;}
+}
+
+@keyframes empty-heart-fading {
+    from {opacity : 100%;}
+    20% {opacity: 80%;}
+    40% {opacity: 60%;}
+    60% {opacity: 40%;}
+    80% {opacity: 20%;}
+    to {opacity: 0%;}
+}
+
+@keyframes gradiant-heart-fading {
+    from {opacity : 0%;}
+    20% {opacity: 20%;}
+    40% {opacity: 40%;}
+    60% {opacity: 60%;}
+    80% {opacity: 80%;}
+    to {opacity: 100%;}
 }

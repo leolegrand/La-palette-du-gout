@@ -15,7 +15,7 @@
     animation: menu-items-delay linear 500ms;
     @for $i from 1 to 4 {
         &:nth-of-type(#{$i}){
-            animation-delay: $i *40ms;
+            animation-delay: $i *50ms;
         }
     }
     &__layout{
